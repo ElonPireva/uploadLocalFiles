@@ -1,7 +1,6 @@
 const input = document.getElementById('input');
 
 input.addEventListener('change', (e) => {
-    console.log(e.target.files);
     for(let i = 0; i < e.target.files.length; i++){
         if(e.target.files[i].type.startsWith('image')){
             const img = document.createElement('img');
